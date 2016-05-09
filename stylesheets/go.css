@@ -1,0 +1,902 @@
+/*Powered by Weily YANYUAN*/
+
+@font-face {
+    font-family: 'robotolight';
+    src: url("../fonts/Roboto-Light-webfont.eot");
+    src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url("../fonts/Roboto-Regular-webfont.eot");
+    src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url("../fonts/Roboto-Bold-webfont.eot");
+    src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+.logo:hover {
+    background-color: transparent;
+    background-position: 0 0;
+    color: #03a9f4;
+}
+
+.logo {
+    display: block;
+    width: 120px;
+    background: url(../images/logo-md.png) 0 -60px no-repeat #00A5ED;
+    text-indent: -9999px;
+    -webkit-transition: background .2s ease;
+    transition: background .2s ease;
+}
+
+.logo {
+    height: 60px;
+}
+
+.content {
+    overflow: hidden;
+    min-width: 600px;
+}
+
+.main {
+    /*background-color: #fcaebb;*/
+    float: left;
+    width: 100%;
+}
+
+
+/*双飞翼布局*/
+
+.go-wrap {
+    padding-left: 0px;
+    display: none;
+}
+
+
+/*三列等高*/
+
+.main {
+    padding-bottom: 500px;
+    margin-bottom: -500px;
+}
+
+pre {
+    white-space: pre-line;
+    margin: 1em 0px;
+}
+
+.footer {
+    height: 50px;
+    margin-top: 50px;
+    background-color: #5c9faf;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    line-height: 50px;
+}
+
+@import url(http://fonts.useso.com/css?family=Raleway:200,500,700,800);
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?rretjt');
+    src: url('../fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'), url('../fonts/icomoon.woff?rretjt') format('woff'), url('../fonts/icomoon.ttf?rretjt') format('truetype'), url('../fonts/icomoon.svg?rretjt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+a {
+    color: #2fa0ec;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    color: #74777b;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: -webkit-linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
+    color: rgba(0, 0, 0, 0.6);
+    /*font-family: "Roboto", sans-serif;*/
+    font-size: 14px;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, STHeiti;
+}
+
+h2,
+h3,
+p,
+span {
+    font-family: 'robotolight';
+}
+
+[ripple] {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+[ripple] .ripple {
+    position: absolute;
+    background: #FFFFFF;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    -webkit-animation: ripple 1.6s;
+    animation: ripple 1.6s;
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    100% {
+        -webkit-transform: scale(40);
+        transform: scale(40);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    100% {
+        -webkit-transform: scale(40);
+        transform: scale(40);
+        opacity: 0;
+    }
+}
+
+.tabs {
+    z-index: 15;
+    position: relative;
+    background: #FFFFFF;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    /*margin: 100px auto 10px;*/
+    overflow: hidden;
+}
+
+.tabs-header {
+    position: relative;
+    background: #4285F4;
+    overflow: hidden;
+}
+
+.tabs-header .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #F4B142;
+    width: auto;
+    height: 2px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.tabs-header ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: calc(100% - 68px);
+}
+
+.tabs-header li {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    list-style: none;
+}
+
+.tabs-header a {
+    z-index: 1;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.tabs-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #4285F4;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    color: #FFFFFF;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tabs-nav:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 0 0 20px 10px #4285F4;
+}
+
+.tabs-nav i {
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.tabs-content {
+    position: relative;
+    padding: 20px 20px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.tabs-content:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 0 20px 10px #FFFFFF;
+}
+
+.tabs-content .tab {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    overflow: hidden;
+}
+
+.tabs-content .tab.active {
+    display: block;
+}
+
+
+/*成都周边*/
+
+.go-wrapper {
+    position: relative;
+    height: 585px;
+    overflow: hidden;
+}
+
+.place-left {
+    float: left;
+    width: 630px;
+    overflow: hidden;
+}
+
+.place-item {
+    float: left;
+    position: relative;
+    display: inline;
+    margin: 0 15px 15px 0;
+    overflow: hidden;
+}
+
+.place-left .place-big {
+    height: 290px;
+}
+
+.place-left .place-mid {
+    width: 300px;
+    height: 280px;
+}
+
+.place-item a {
+    display: block;
+    color: #fff;
+}
+
+.place-item .place-linkbig {
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    height: 290px;
+    width: 615px;
+}
+
+.place-item .place-linkmid {
+    height: 280px;
+    width: 300px;
+    display: block;
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.place-item .place-title {
+    font-family: 'robotoregular';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 12px 20px 0;
+    height: 57px;
+    line-height: 56px;
+    font-size: 24px;
+    font-weight: normal;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.4) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+    -webkit-transition: opacity .5s ease 0s;
+    transition: opacity .5s ease 0s;
+}
+
+.place-item .place-info {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /*display: table;*/
+    font-size: 14px;
+    line-height: 20px;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+    -webkit-transition: top .5s ease 0s;
+    transition: top .5s ease 0s;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.place-item .place-middle {
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.place-item a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.place-item a:hover .place-title {
+    opacity: 0;
+    display: none\9;
+}
+
+.place-item a:hover .place-info {
+    top: 0;
+}
+
+.hide-info {
+    display: none;
+}
+
+.place-item h3 {
+    margin-bottom: 5px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.place-item p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+/*.place-item .place-bigimg{
+    margin: 0px 0px 0px -14px;
+    height: 100%;
+    width: auto;
+}*/
+
+.place-item .place-bigmid {
+    margin: 0px 0px 0px -60px;
+    height: 100%;
+    width: auto;
+}
+
+.place-right {
+    float: right;
+    width: 470px;
+}
+
+.place-item .place-ri {
+    height: 185px;
+}
+
+.place-item .right-link {
+    height: 185px;
+    width: 470px;
+}
+
+.place-item .place-imgri {
+    margin: -30.5325px 0px 0px;
+    width: 100%;
+    height: auto;
+}
+
+
+/*时令推荐*/
+
+.go-title {
+    text-align: center;
+}
+
+.place-nav {
+    text-align: center;
+    height: 36px;
+    width: 540px;
+    margin: 0px auto 30px;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 18px;
+    color: #333;
+    line-height: 22px;
+}
+
+.place-nav .nav-item {
+    float: left;
+    width: 180px;
+    height: 36px;
+    list-style: none;
+}
+
+.nav-item a {
+    display: block;
+    height: 35px;
+    color: #333;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-active a {
+    border-bottom: 3px solid #ff9d00;
+    margin-bottom: -1px;
+    color: #ff9d00;
+}
+
+
+/*景点详情*/
+
+.place-main {
+    height: 590px;
+    color: #333;
+    font-family: "robotolight";
+    font-size: 12px;
+    position: relative;
+}
+
+.tabs-bg {
+    /*position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;*/
+    /* background: rgba(92, 180, 142, 0.4);*/
+    background-color: #f5f5f5;
+}
+
+
+/*.place-row{
+    margin-right: -15px;
+    margin-left: -15px;
+}*/
+
+
+/*#b04 .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+#b04 .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}*/
+
+/*#b04 .dots li.active {
+    background: #fff;
+    opacity: 1;
+}*/
+
+.place-banner .arrow {
+    position: absolute;
+    top: 150px;
+    background-color: #544f4b;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
+
+.place-banner #al {
+    left: 15px;
+}
+
+.place-banner #ar {
+    right: 15px;
+}
+.place-banner {
+    position: relative;
+    background-color: #f5f5f5;
+    text-align: center;
+    width: 525px;
+    height: 295px;
+    float: left;
+    overflow: hidden;
+}
+
+.info-imgurl {
+    width: 5040px;
+    height: 295px;
+    position: relative;
+    overflow: hidden;
+}
+
+.place-banner ul li {
+    float: left;
+}
+
+/*.am-slider {
+    position: relative;
+}*/
+
+.place-count {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    zoom: 1;
+    z-index: 20;
+}
+
+.pic-moretext {
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    font: 400 14px/20px 'microsoft yahei';
+    padding: 16px 0 16px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.place-more {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    float: left;
+}
+
+.pic-arrow {
+    width: 40px;
+    height: 40px;
+    float: left;
+    /*font-size: 40px;*/
+    background: url(../images/arrowr.png) no-repeat;
+    color: #fff;
+    color: rgba(255, 255, 255, .6);
+    text-align: left;
+    /* display: inline-block;*/
+}
+
+
+/*.place-arrow{
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-color: #544f4b;
+    
+}
+*/
+
+.main-infowrap {
+    height: 295px;
+    background-color: #fff;
+    float: left;
+}
+
+h3.info-title {
+    margin-top: 13px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    line-height: 24px;
+    text-indent: 2em;
+    display: inline-block;
+}
+
+.user-wrapper {
+    position: relative;
+    position: absolute;
+    right: 26px;
+    top: 0;
+    height: 70px;
+    padding-top: 8px;
+    display: inline-block;
+}
+
+.user-btn {
+    display: inline-block;
+    float: right;
+    width: 45px;
+    height: 45px;
+    margin-left: 30.5px;
+    position: relative;
+}
+
+.user-icon {
+    font-size: 60px;
+    line-height: 1;
+    position: absolute;
+    /*left: -9px;
+    top: -8px;*/
+    /*display: block;*/
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.white {
+    color: #fff;
+    z-index: 5;
+}
+
+.u-icon {
+    top: 9px;
+    left: 11px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.user-home {
+    background-color: #52ccae;
+}
+
+.user-print {
+    background-color: #af93f5;
+}
+
+.user-route {
+    background-color: #f381c2;
+}
+
+.user-btn em {
+    font: 400 12px/1.5 'microsoft yahei';
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    top: 100%;
+    margin: 8px 0 0 -6px;
+    left: 0;
+    white-space: nowrap;
+    color: #333;
+    z-index: 3;
+    cursor: pointer;
+    height: auto;
+    background: 0 0;
+    padding: 0;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.main-score {
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    margin-top: 6px;
+    margin-left: 50px;
+}
+
+.star-new {
+    margin-top: 4px;
+    float: left;
+    margin-right: 2px;
+    background: url(../images/star.png) no-repeat;
+    background-size: 100% auto;
+    width: 100px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.star-new .star-9 {
+    float: left;
+    margin-right: 2px;
+    background: url(../images/star.png) no-repeat;
+    background-size: 100px auto;
+    width: 92px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    background-position: 0 -17px;
+    /*width: 92px;
+    position: absolute;
+    height: 16px;
+    background-size: 100% auto;
+    background: url(../images/star.png) no-repeat;
+    background-position: 0 -17px;
+    display: inline-block;
+    margin-top: 4px;
+    float: left;
+    margin-right: 2px;*/
+}
+
+.info-one {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-one,
+.info-two {
+    text-indent: 1em;
+    font-size: 16px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+
+/*.blue{*/
+
+
+/*color: #3498DB;*/
+
+
+/*}*/
+
+.red {
+    color: #ff5e48;
+}
+
+.greygreen {
+    color: #6bc235;
+}
+
+.deepblue {
+    color: #005aab;
+}
+
+.yellow {
+    color: #fae371;
+}
+
+.glyphicon-bookmark {
+    top: 3px;
+}
+
+.info-content {
+    height: 300px;
+    background-color: #fff;
+    margin: 10px 15px;
+    padding: 20px 0 20px;
+}
+
+.main-info {
+    width: 100%;
+    display: block;
+    margin: 10px 0 10px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.main-text {
+    display: inline;
+    font-weight: 700;
+}
+

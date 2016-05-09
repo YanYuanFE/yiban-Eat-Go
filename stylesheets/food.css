@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/Roboto-Bold-webfont.eot");
+  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#Body {
+    width: 100%;
+    min-height: 500px;
+    min-width: 1140px;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+
+
+
+
+.wrapper{
+    width: 1140px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+}
+
+.hd{
+    margin-bottom: 35px;
+    font-size: 24px;
+    color: #643718;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+}
+
+.item{
+    margin-bottom: 48px;
+}
+
+dt{
+    float: left;
+    width: 280px;
+    margin-left: 15px;
+}
+
+.icon-num{
+    float: left;
+    width: 40px;
+    height: 50px;
+    margin: 0 12px 25px 0;
+    background: url(../images/pictures/num.png) no-repeat -200px 0;
+}
+
+.num2{
+    background-position: -240px 0;
+}
+.num3{
+    background-position: -280px 0;
+}
+.num4{
+    background-position: -320px 0;
+}
+.num5{
+    background-position: -360px 0;
+}
+.num6{
+    background-position: -400px 0;
+}
+
+/*.count{*/
+    /*float: right;*/
+    /*padding-top: 10px;*/
+    /*color: #a8a8a8;*/
+/*}*/
+
+.title{
+    padding-top: 5px;
+    line-height: 26px;
+    font-size: 18px;
+    color: #ff7200;
+    font-weight:normal;
+    font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+}
+
+.info{
+    clear: both;
+    padding-left: 5px;
+    font-size: 16px;
+    line-height: 30px;
+    word-break: initial;
+    font-family: 'robotolight';
+    /*font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;;
+   */ color: #666;
+}
+
+dd{
+    float: right;
+    width: 674px;
+    height: 335px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    height: 0;
+    display: block;
+    overflow: hidden;
+}
+
+dd ul{
+    margin-right: -10px;
+}
+
+ul li.large{
+    width: 440px;
+    height: 335px;
+}
+
+li.img-item{
+    float: left;
+    width: 229px;
+    height: 165px;
+    display: inline;
+    margin: 0 5px 5px 0;
+    overflow: hidden;
+}
+
+img{
+    border: 0;
+    vertical-align: middle;
+}
+
+#MainBody{
+    background-color: #f5f5f5;
+}
+.page{
+    
+    text-align: center;
+}
+.navbar-text{
+    font-weight: bold;
+    font-family: "robotolight";
+    cursor: pointer;
+}
+.red{
+    color: #C0392B;
+}
+.eat-main{
+    padding: 0 10px;
+}
+.eat-imgitem{
+    background-color: #fff;
+    text-align: center;
+}
+.eat-infoitem{
+    background-color: #fff;
+    height:335px;
+    padding: 15px;
+}
+.eat-infoitem h2{
+    font-weight: bold;
+}
+.eat-text{
+    font-size: 16px;
+    line-height: 25px;
+}
+.eat-infowrap{
+    height:320px;
+    background-color: #fff;
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+.eat-content{
+    display: block;
+    line-height: 40px;
+    font-size: 16px;
+}
+.eat-content-title{
+    font-weight: bold;
+    font-family: 'robotoregular';
+}
+.shop-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.fa{
+    margin-right: 10px;
+    text-align: center;
+}
+.orange{
+    color: #eb4f38;
+}
+.white{
+    color: #fff;
+}
+.blue{
+    color: #56abe4;
+}
+.green{
+    color: #11cd6e;
+}
